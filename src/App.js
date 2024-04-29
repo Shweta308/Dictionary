@@ -22,7 +22,7 @@ const XDictionary = () => {
 
   return (
     <div className="x-dictionary">
-      <h1>XDictionary</h1>
+      <h1>XDictionary</h1> {/* Add the header here */}
       <div className="search-container">
         <input
           type="text"
@@ -32,8 +32,7 @@ const XDictionary = () => {
         />
         <button onClick={handleSearch}>Search</button>
       </div>
- 
-      <div className="meaning"><strong>Definition:</strong>
+      <div className="meaning">
         {meaning && <p>{meaning}</p>}
       </div>
     </div>
